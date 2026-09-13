@@ -1,0 +1,1091 @@
+{
+  "schema_version": "1.0.0",
+  "target": "missed_delivery",
+  "feature_count": 154,
+  "expected_features": [
+    "Grupo_raiz",
+    "customer",
+    "uat",
+    "destination",
+    "history_available_D7",
+    "history_available_D14",
+    "history_available_D21",
+    "history_available_D28",
+    "available_lag_count",
+    "history_records_before_D",
+    "FabricacionSemana_D7",
+    "RitmoSemana_D7",
+    "CumpFabRit_D7",
+    "ExpedidasSemana_D7",
+    "Demanda_D7",
+    "CumpExpDem_D7",
+    "StockFin_D7",
+    "StockReal_D7",
+    "CumpStock_D7",
+    "AcumFab_D7",
+    "AcumRitmo_D7",
+    "PorcenCump_D7",
+    "AcumEnvio_D7",
+    "AcumDemanda_D7",
+    "PorcenCumpto_D7",
+    "EntregasPrev_D7",
+    "DemandActual_D7",
+    "CumpTotal_D7",
+    "FabricacionSemana_D14",
+    "RitmoSemana_D14",
+    "CumpFabRit_D14",
+    "ExpedidasSemana_D14",
+    "Demanda_D14",
+    "CumpExpDem_D14",
+    "StockFin_D14",
+    "StockReal_D14",
+    "CumpStock_D14",
+    "AcumFab_D14",
+    "AcumRitmo_D14",
+    "PorcenCump_D14",
+    "AcumEnvio_D14",
+    "AcumDemanda_D14",
+    "PorcenCumpto_D14",
+    "EntregasPrev_D14",
+    "DemandActual_D14",
+    "CumpTotal_D14",
+    "FabricacionSemana_D21",
+    "RitmoSemana_D21",
+    "CumpFabRit_D21",
+    "ExpedidasSemana_D21",
+    "Demanda_D21",
+    "CumpExpDem_D21",
+    "StockFin_D21",
+    "StockReal_D21",
+    "CumpStock_D21",
+    "AcumFab_D21",
+    "AcumRitmo_D21",
+    "PorcenCump_D21",
+    "AcumEnvio_D21",
+    "AcumDemanda_D21",
+    "PorcenCumpto_D21",
+    "EntregasPrev_D21",
+    "DemandActual_D21",
+    "CumpTotal_D21",
+    "FabricacionSemana_D28",
+    "RitmoSemana_D28",
+    "CumpFabRit_D28",
+    "ExpedidasSemana_D28",
+    "Demanda_D28",
+    "CumpExpDem_D28",
+    "StockFin_D28",
+    "StockReal_D28",
+    "CumpStock_D28",
+    "AcumFab_D28",
+    "AcumRitmo_D28",
+    "PorcenCump_D28",
+    "AcumEnvio_D28",
+    "AcumDemanda_D28",
+    "PorcenCumpto_D28",
+    "EntregasPrev_D28",
+    "DemandActual_D28",
+    "CumpTotal_D28",
+    "production_gap_D7",
+    "shipment_demand_gap_D7",
+    "stock_gap_D7",
+    "accumulated_production_gap_D7",
+    "accumulated_delivery_gap_D7",
+    "planned_delivery_gap_D7",
+    "production_gap_D14",
+    "shipment_demand_gap_D14",
+    "stock_gap_D14",
+    "accumulated_production_gap_D14",
+    "accumulated_delivery_gap_D14",
+    "planned_delivery_gap_D14",
+    "production_gap_D21",
+    "shipment_demand_gap_D21",
+    "stock_gap_D21",
+    "accumulated_production_gap_D21",
+    "accumulated_delivery_gap_D21",
+    "planned_delivery_gap_D21",
+    "production_gap_D28",
+    "shipment_demand_gap_D28",
+    "stock_gap_D28",
+    "accumulated_production_gap_D28",
+    "accumulated_delivery_gap_D28",
+    "planned_delivery_gap_D28",
+    "CumpStock_delta_D7_D14",
+    "CumpStock_delta_D14_D28",
+    "CumpStock_delta_D7_D28",
+    "stock_gap_delta_D7_D14",
+    "stock_gap_delta_D14_D28",
+    "stock_gap_delta_D7_D28",
+    "CumpExpDem_delta_D7_D14",
+    "CumpExpDem_delta_D14_D28",
+    "CumpExpDem_delta_D7_D28",
+    "shipment_demand_gap_delta_D7_D14",
+    "shipment_demand_gap_delta_D14_D28",
+    "shipment_demand_gap_delta_D7_D28",
+    "CumpFabRit_delta_D7_D14",
+    "CumpFabRit_delta_D14_D28",
+    "CumpFabRit_delta_D7_D28",
+    "production_gap_delta_D7_D14",
+    "production_gap_delta_D14_D28",
+    "production_gap_delta_D7_D28",
+    "PorcenCumpto_delta_D7_D14",
+    "PorcenCumpto_delta_D14_D28",
+    "PorcenCumpto_delta_D7_D28",
+    "accumulated_delivery_gap_delta_D7_D14",
+    "accumulated_delivery_gap_delta_D14_D28",
+    "accumulated_delivery_gap_delta_D7_D28",
+    "PorcenCump_delta_D7_D14",
+    "PorcenCump_delta_D14_D28",
+    "PorcenCump_delta_D7_D28",
+    "accumulated_production_gap_delta_D7_D14",
+    "accumulated_production_gap_delta_D14_D28",
+    "accumulated_production_gap_delta_D7_D28",
+    "CumpTotal_delta_D7_D14",
+    "CumpTotal_delta_D14_D28",
+    "CumpTotal_delta_D7_D28",
+    "planned_delivery_gap_delta_D7_D14",
+    "planned_delivery_gap_delta_D14_D28",
+    "planned_delivery_gap_delta_D7_D28",
+    "Demanda_delta_D7_D14",
+    "Demanda_delta_D14_D28",
+    "Demanda_delta_D7_D28",
+    "DemandActual_delta_D7_D14",
+    "DemandActual_delta_D14_D28",
+    "DemandActual_delta_D7_D28",
+    "EntregasPrev_delta_D7_D14",
+    "EntregasPrev_delta_D14_D28",
+    "EntregasPrev_delta_D7_D28",
+    "month",
+    "day_of_week",
+    "week_of_year"
+  ],
+  "categorical_features": [
+    "Grupo_raiz",
+    "customer",
+    "uat",
+    "destination"
+  ],
+  "numerical_features": [
+    "history_available_D7",
+    "history_available_D14",
+    "history_available_D21",
+    "history_available_D28",
+    "available_lag_count",
+    "history_records_before_D",
+    "FabricacionSemana_D7",
+    "RitmoSemana_D7",
+    "CumpFabRit_D7",
+    "ExpedidasSemana_D7",
+    "Demanda_D7",
+    "CumpExpDem_D7",
+    "StockFin_D7",
+    "StockReal_D7",
+    "CumpStock_D7",
+    "AcumFab_D7",
+    "AcumRitmo_D7",
+    "PorcenCump_D7",
+    "AcumEnvio_D7",
+    "AcumDemanda_D7",
+    "PorcenCumpto_D7",
+    "EntregasPrev_D7",
+    "DemandActual_D7",
+    "CumpTotal_D7",
+    "FabricacionSemana_D14",
+    "RitmoSemana_D14",
+    "CumpFabRit_D14",
+    "ExpedidasSemana_D14",
+    "Demanda_D14",
+    "CumpExpDem_D14",
+    "StockFin_D14",
+    "StockReal_D14",
+    "CumpStock_D14",
+    "AcumFab_D14",
+    "AcumRitmo_D14",
+    "PorcenCump_D14",
+    "AcumEnvio_D14",
+    "AcumDemanda_D14",
+    "PorcenCumpto_D14",
+    "EntregasPrev_D14",
+    "DemandActual_D14",
+    "CumpTotal_D14",
+    "FabricacionSemana_D21",
+    "RitmoSemana_D21",
+    "CumpFabRit_D21",
+    "ExpedidasSemana_D21",
+    "Demanda_D21",
+    "CumpExpDem_D21",
+    "StockFin_D21",
+    "StockReal_D21",
+    "CumpStock_D21",
+    "AcumFab_D21",
+    "AcumRitmo_D21",
+    "PorcenCump_D21",
+    "AcumEnvio_D21",
+    "AcumDemanda_D21",
+    "PorcenCumpto_D21",
+    "EntregasPrev_D21",
+    "DemandActual_D21",
+    "CumpTotal_D21",
+    "FabricacionSemana_D28",
+    "RitmoSemana_D28",
+    "CumpFabRit_D28",
+    "ExpedidasSemana_D28",
+    "Demanda_D28",
+    "CumpExpDem_D28",
+    "StockFin_D28",
+    "StockReal_D28",
+    "CumpStock_D28",
+    "AcumFab_D28",
+    "AcumRitmo_D28",
+    "PorcenCump_D28",
+    "AcumEnvio_D28",
+    "AcumDemanda_D28",
+    "PorcenCumpto_D28",
+    "EntregasPrev_D28",
+    "DemandActual_D28",
+    "CumpTotal_D28",
+    "production_gap_D7",
+    "shipment_demand_gap_D7",
+    "stock_gap_D7",
+    "accumulated_production_gap_D7",
+    "accumulated_delivery_gap_D7",
+    "planned_delivery_gap_D7",
+    "production_gap_D14",
+    "shipment_demand_gap_D14",
+    "stock_gap_D14",
+    "accumulated_production_gap_D14",
+    "accumulated_delivery_gap_D14",
+    "planned_delivery_gap_D14",
+    "production_gap_D21",
+    "shipment_demand_gap_D21",
+    "stock_gap_D21",
+    "accumulated_production_gap_D21",
+    "accumulated_delivery_gap_D21",
+    "planned_delivery_gap_D21",
+    "production_gap_D28",
+    "shipment_demand_gap_D28",
+    "stock_gap_D28",
+    "accumulated_production_gap_D28",
+    "accumulated_delivery_gap_D28",
+    "planned_delivery_gap_D28",
+    "CumpStock_delta_D7_D14",
+    "CumpStock_delta_D14_D28",
+    "CumpStock_delta_D7_D28",
+    "stock_gap_delta_D7_D14",
+    "stock_gap_delta_D14_D28",
+    "stock_gap_delta_D7_D28",
+    "CumpExpDem_delta_D7_D14",
+    "CumpExpDem_delta_D14_D28",
+    "CumpExpDem_delta_D7_D28",
+    "shipment_demand_gap_delta_D7_D14",
+    "shipment_demand_gap_delta_D14_D28",
+    "shipment_demand_gap_delta_D7_D28",
+    "CumpFabRit_delta_D7_D14",
+    "CumpFabRit_delta_D14_D28",
+    "CumpFabRit_delta_D7_D28",
+    "production_gap_delta_D7_D14",
+    "production_gap_delta_D14_D28",
+    "production_gap_delta_D7_D28",
+    "PorcenCumpto_delta_D7_D14",
+    "PorcenCumpto_delta_D14_D28",
+    "PorcenCumpto_delta_D7_D28",
+    "accumulated_delivery_gap_delta_D7_D14",
+    "accumulated_delivery_gap_delta_D14_D28",
+    "accumulated_delivery_gap_delta_D7_D28",
+    "PorcenCump_delta_D7_D14",
+    "PorcenCump_delta_D14_D28",
+    "PorcenCump_delta_D7_D28",
+    "accumulated_production_gap_delta_D7_D14",
+    "accumulated_production_gap_delta_D14_D28",
+    "accumulated_production_gap_delta_D7_D28",
+    "CumpTotal_delta_D7_D14",
+    "CumpTotal_delta_D14_D28",
+    "CumpTotal_delta_D7_D28",
+    "planned_delivery_gap_delta_D7_D14",
+    "planned_delivery_gap_delta_D14_D28",
+    "planned_delivery_gap_delta_D7_D28",
+    "Demanda_delta_D7_D14",
+    "Demanda_delta_D14_D28",
+    "Demanda_delta_D7_D28",
+    "DemandActual_delta_D7_D14",
+    "DemandActual_delta_D14_D28",
+    "DemandActual_delta_D7_D28",
+    "EntregasPrev_delta_D7_D14",
+    "EntregasPrev_delta_D14_D28",
+    "EntregasPrev_delta_D7_D28",
+    "month",
+    "day_of_week",
+    "week_of_year"
+  ],
+  "feature_types": {
+    "Grupo_raiz": {
+      "general_type": "categorical",
+      "training_dtype": "str",
+      "position": 0
+    },
+    "customer": {
+      "general_type": "categorical",
+      "training_dtype": "str",
+      "position": 1
+    },
+    "uat": {
+      "general_type": "categorical",
+      "training_dtype": "str",
+      "position": 2
+    },
+    "destination": {
+      "general_type": "categorical",
+      "training_dtype": "str",
+      "position": 3
+    },
+    "history_available_D7": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 4
+    },
+    "history_available_D14": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 5
+    },
+    "history_available_D21": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 6
+    },
+    "history_available_D28": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 7
+    },
+    "available_lag_count": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 8
+    },
+    "history_records_before_D": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 9
+    },
+    "FabricacionSemana_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 10
+    },
+    "RitmoSemana_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 11
+    },
+    "CumpFabRit_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 12
+    },
+    "ExpedidasSemana_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 13
+    },
+    "Demanda_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 14
+    },
+    "CumpExpDem_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 15
+    },
+    "StockFin_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 16
+    },
+    "StockReal_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 17
+    },
+    "CumpStock_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 18
+    },
+    "AcumFab_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 19
+    },
+    "AcumRitmo_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 20
+    },
+    "PorcenCump_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 21
+    },
+    "AcumEnvio_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 22
+    },
+    "AcumDemanda_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 23
+    },
+    "PorcenCumpto_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 24
+    },
+    "EntregasPrev_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 25
+    },
+    "DemandActual_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 26
+    },
+    "CumpTotal_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 27
+    },
+    "FabricacionSemana_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 28
+    },
+    "RitmoSemana_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 29
+    },
+    "CumpFabRit_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 30
+    },
+    "ExpedidasSemana_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 31
+    },
+    "Demanda_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 32
+    },
+    "CumpExpDem_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 33
+    },
+    "StockFin_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 34
+    },
+    "StockReal_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 35
+    },
+    "CumpStock_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 36
+    },
+    "AcumFab_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 37
+    },
+    "AcumRitmo_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 38
+    },
+    "PorcenCump_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 39
+    },
+    "AcumEnvio_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 40
+    },
+    "AcumDemanda_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 41
+    },
+    "PorcenCumpto_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 42
+    },
+    "EntregasPrev_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 43
+    },
+    "DemandActual_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 44
+    },
+    "CumpTotal_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 45
+    },
+    "FabricacionSemana_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 46
+    },
+    "RitmoSemana_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 47
+    },
+    "CumpFabRit_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 48
+    },
+    "ExpedidasSemana_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 49
+    },
+    "Demanda_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 50
+    },
+    "CumpExpDem_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 51
+    },
+    "StockFin_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 52
+    },
+    "StockReal_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 53
+    },
+    "CumpStock_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 54
+    },
+    "AcumFab_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 55
+    },
+    "AcumRitmo_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 56
+    },
+    "PorcenCump_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 57
+    },
+    "AcumEnvio_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 58
+    },
+    "AcumDemanda_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 59
+    },
+    "PorcenCumpto_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 60
+    },
+    "EntregasPrev_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 61
+    },
+    "DemandActual_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 62
+    },
+    "CumpTotal_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 63
+    },
+    "FabricacionSemana_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 64
+    },
+    "RitmoSemana_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 65
+    },
+    "CumpFabRit_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 66
+    },
+    "ExpedidasSemana_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 67
+    },
+    "Demanda_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 68
+    },
+    "CumpExpDem_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 69
+    },
+    "StockFin_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 70
+    },
+    "StockReal_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 71
+    },
+    "CumpStock_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 72
+    },
+    "AcumFab_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 73
+    },
+    "AcumRitmo_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 74
+    },
+    "PorcenCump_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 75
+    },
+    "AcumEnvio_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 76
+    },
+    "AcumDemanda_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 77
+    },
+    "PorcenCumpto_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 78
+    },
+    "EntregasPrev_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 79
+    },
+    "DemandActual_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 80
+    },
+    "CumpTotal_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 81
+    },
+    "production_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 82
+    },
+    "shipment_demand_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 83
+    },
+    "stock_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 84
+    },
+    "accumulated_production_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 85
+    },
+    "accumulated_delivery_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 86
+    },
+    "planned_delivery_gap_D7": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 87
+    },
+    "production_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 88
+    },
+    "shipment_demand_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 89
+    },
+    "stock_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 90
+    },
+    "accumulated_production_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 91
+    },
+    "accumulated_delivery_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 92
+    },
+    "planned_delivery_gap_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 93
+    },
+    "production_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 94
+    },
+    "shipment_demand_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 95
+    },
+    "stock_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 96
+    },
+    "accumulated_production_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 97
+    },
+    "accumulated_delivery_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 98
+    },
+    "planned_delivery_gap_D21": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 99
+    },
+    "production_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 100
+    },
+    "shipment_demand_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 101
+    },
+    "stock_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 102
+    },
+    "accumulated_production_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 103
+    },
+    "accumulated_delivery_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 104
+    },
+    "planned_delivery_gap_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 105
+    },
+    "CumpStock_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 106
+    },
+    "CumpStock_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 107
+    },
+    "CumpStock_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 108
+    },
+    "stock_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 109
+    },
+    "stock_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 110
+    },
+    "stock_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 111
+    },
+    "CumpExpDem_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 112
+    },
+    "CumpExpDem_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 113
+    },
+    "CumpExpDem_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 114
+    },
+    "shipment_demand_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 115
+    },
+    "shipment_demand_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 116
+    },
+    "shipment_demand_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 117
+    },
+    "CumpFabRit_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 118
+    },
+    "CumpFabRit_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 119
+    },
+    "CumpFabRit_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 120
+    },
+    "production_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 121
+    },
+    "production_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 122
+    },
+    "production_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 123
+    },
+    "PorcenCumpto_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 124
+    },
+    "PorcenCumpto_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 125
+    },
+    "PorcenCumpto_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 126
+    },
+    "accumulated_delivery_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 127
+    },
+    "accumulated_delivery_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 128
+    },
+    "accumulated_delivery_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 129
+    },
+    "PorcenCump_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 130
+    },
+    "PorcenCump_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 131
+    },
+    "PorcenCump_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 132
+    },
+    "accumulated_production_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 133
+    },
+    "accumulated_production_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 134
+    },
+    "accumulated_production_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 135
+    },
+    "CumpTotal_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 136
+    },
+    "CumpTotal_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 137
+    },
+    "CumpTotal_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 138
+    },
+    "planned_delivery_gap_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 139
+    },
+    "planned_delivery_gap_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 140
+    },
+    "planned_delivery_gap_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 141
+    },
+    "Demanda_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 142
+    },
+    "Demanda_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 143
+    },
+    "Demanda_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 144
+    },
+    "DemandActual_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 145
+    },
+    "DemandActual_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 146
+    },
+    "DemandActual_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 147
+    },
+    "EntregasPrev_delta_D7_D14": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 148
+    },
+    "EntregasPrev_delta_D14_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 149
+    },
+    "EntregasPrev_delta_D7_D28": {
+      "general_type": "numerical",
+      "training_dtype": "float64",
+      "position": 150
+    },
+    "month": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 151
+    },
+    "day_of_week": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 152
+    },
+    "week_of_year": {
+      "general_type": "numerical",
+      "training_dtype": "int64",
+      "position": 153
+    }
+  }
+}

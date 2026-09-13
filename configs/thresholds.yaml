@@ -1,0 +1,41 @@
+version: 1
+
+model_name: xgboost_full
+score_field: calibrated_probability
+calibration_method: sigmoid
+
+selection:
+  status: provisional_pending_business_approval
+  evaluation_start: 2026-04-01
+  evaluation_end: 2026-04-30
+  threshold_grid_step: 0.005
+  objective: minimize_expected_relative_cost_within_operational_constraints
+
+operational_constraints:
+  minimum_recall: 0.70
+  maximum_average_alerts_per_active_day: 15.0
+
+relative_costs:
+  false_negative: 5.0
+  false_positive: 1.0
+  unit: relative_cost_unit
+
+selected_candidate:
+  threshold: 0.08
+  precision: 0.2875399361
+  recall: 0.703125
+  f1: 0.4081632653
+  alerts: 313
+  alerts_per_active_day: 14.9047619048
+  true_positives: 90
+  false_positives: 223
+  false_negatives: 38
+  relative_cost: 413.0
+
+governance:
+  business_approved: false
+  auto_promote: false
+  note: >-
+    Technical candidate selected without using the May-August 2026 temporal
+    holdout. Operations must confirm the recall target, review capacity and
+    relative FN/FP costs before production use.

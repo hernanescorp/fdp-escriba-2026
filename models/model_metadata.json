@@ -1,0 +1,43 @@
+{
+  "model_name": "missed_delivery_xgboost_full",
+  "model_version": "1.0.0",
+  "model_type": "XGBoost",
+  "target": "missed_delivery",
+  "calibration_method": "sigmoid",
+  "operational_threshold": 0.08,
+  "threshold_status": "provisional_pending_business_approval",
+  "business_approved": false,
+  "training_start": "2025-01-02",
+  "training_end": "2026-01-31",
+  "validation_period": {
+    "start": "2026-02-02",
+    "end": "2026-04-30",
+    "calibration_fit": {
+      "start": "2026-02-02",
+      "end": "2026-03-31"
+    },
+    "threshold_selection": {
+      "start": "2026-04-01",
+      "end": "2026-04-30"
+    }
+  },
+  "holdout_period": {
+    "start": "2026-05-04",
+    "end": "2026-08-25"
+  },
+  "created_at": "2026-08-30T18:42:14+02:00",
+  "feature_count": 154,
+  "transformed_feature_count": 467,
+  "training_rows": 22342,
+  "calibration_rows": 4131,
+  "artifact_files": {
+    "pipeline": "md_xgboost_pipeline.joblib",
+    "calibrator": "calibrator.joblib",
+    "feature_schema": "feature_schema.json"
+  },
+  "library_versions": {
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.5.3"
+  }
+}

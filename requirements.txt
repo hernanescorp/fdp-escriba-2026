@@ -1,0 +1,13 @@
+pandas==3.0.5
+numpy==2.5.1
+matplotlib==3.11.1
+scipy==1.18.0
+scikit-learn==1.9.0
+statsmodels==0.15.0
+PyYAML==6.0.3
+xgboost==3.4.1
+shap==0.52.0
+joblib==1.5.3
+pytest==9.1.1
+ipykernel==7.3.0
+nbconvert==7.17.1

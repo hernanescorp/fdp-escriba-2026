@@ -1,0 +1,135 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "MicrosoftTeamsConnection": {
+      "type": "string"
+    },
+    "FabricSqlEndpointConnection": {
+      "type": "string"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "name": "pl_ml_missdeliveries",
+      "type": "pipelines",
+      "apiVersion": "2018-06-01",
+      "properties": {
+        "activities": [
+          {
+            "name": "scoring_features",
+            "type": "TridentNotebook",
+            "dependsOn": [],
+            "policy": {
+              "timeout": "0.12:00:00",
+              "retry": 0,
+              "retryIntervalInSeconds": 30,
+              "secureOutput": false,
+              "secureInput": false
+            },
+            "typeProperties": {
+              "notebookId": "<NOTEBOOK_ID>",
+              "workspaceId": "<WORKSPACE_ID>"
+            }
+          },
+          {
+            "name": "model_prediction",
+            "type": "TridentNotebook",
+            "dependsOn": [
+              {
+                "activity": "Wait1",
+                "dependencyConditions": [
+                  "Succeeded"
+                ]
+              }
+            ],
+            "policy": {
+              "timeout": "0.12:00:00",
+              "retry": 0,
+              "retryIntervalInSeconds": 30,
+              "secureOutput": false,
+              "secureInput": false
+            },
+            "typeProperties": {
+              "notebookId": "<NOTEBOOK_ID>",
+              "workspaceId": "<WORKSPACE_ID>"
+            }
+          },
+          {
+            "name": "MicrosoftTeams1",
+            "type": "MicrosoftTeams",
+            "dependsOn": [
+              {
+                "activity": "model_prediction",
+                "dependencyConditions": [
+                  "Succeeded"
+                ]
+              }
+            ],
+            "policy": {
+              "timeout": "0.12:00:00",
+              "retry": 0,
+              "retryIntervalInSeconds": 30,
+              "secureOutput": false,
+              "secureInput": false
+            },
+            "typeProperties": {
+              "operationType": "SendMessageInGroupChat",
+              "content": "<p>Inferencia realizada para el @{pipeline().PipelineName} pipeline.</p>",
+              "chatId": "<TEAMS_CHAT_ID>"
+            },
+            "externalReferences": {
+              "connection": "[parameters('MicrosoftTeamsConnection')]"
+            }
+          },
+          {
+            "name": "Refresh SQL analytics endpoint1",
+            "type": "RefreshSqlEndpoint",
+            "dependsOn": [
+              {
+                "activity": "scoring_features",
+                "dependencyConditions": [
+                  "Succeeded"
+                ]
+              }
+            ],
+            "policy": {
+              "timeout": "0.12:00:00",
+              "retry": 0,
+              "retryIntervalInSeconds": 30,
+              "secureOutput": false,
+              "secureInput": false
+            },
+            "typeProperties": {
+              "sqlEndpointId": "<SQL_ENDPOINT_ID>",
+              "workspaceId": "<WORKSPACE_ID>",
+              "recreateTables": false
+            },
+            "externalReferences": {
+              "connection": "[parameters('FabricSqlEndpointConnection')]"
+            }
+          },
+          {
+            "name": "Wait1",
+            "type": "Wait",
+            "dependsOn": [
+              {
+                "activity": "Refresh SQL analytics endpoint1",
+                "dependencyConditions": [
+                  "Succeeded"
+                ]
+              }
+            ],
+            "typeProperties": {
+              "waitTimeInSeconds": 180
+            }
+          }
+        ],
+        "lastModifiedByObjectId": "<REDACTED_OBJECT_ID>",
+        "lastPublishTime": "2026-09-04T13:19:44Z"
+      },
+      "dependsOn": []
+    }
+  ]
+}
